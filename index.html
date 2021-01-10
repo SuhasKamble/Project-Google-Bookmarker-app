@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Google with bookmarks</title>
+</head>
+<body onload="fetchBookmarks()">
+    <section class="google">
+        <div class="google-container">
+            <div class="google-img">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="">
+
+            </div>
+            
+            <form class="input-container" id="googleForm">
+                <i class="fas fa-search"></i>
+                <input type="text" id="googleInput" placeholder="Search Google" >
+                <i class="fas fa-microphone"></i>
+            </form>
+        </div>
+        <div class="bookmark-container" id="bookmarkResults">
+            <div class="bookmarkResult">
+                <button class="btn"> <a href="#"><i class="fas fa-bookmark"></i></a></a></button>
+                <small>Add </small>
+            </div>
+          
+        </div>
+        <div class="bookmark-add">
+            <button class="btn" id="openBtn"><i class="fas fa-bookmark"></i></button>
+        </div>
+    </section>
+    
+    <div class="bookmark-form" id="formContainer">
+        <div class="bookmark-main">
+            <div class="delete-container" id="closeBtn">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="bookmark-box">
+                <div class="bookmark-head">
+                    <h1>Add bookmark</h1>
+                </div>
+                <form id="myForm">
+                    <div class="form-div">
+                        <small>Title</small>
+                        <input type="text" placeholder="Add Title" id="siteName">
+                    </div>
+                    <div class="form-div">
+                        <small>URL</small>
+                        <input type="text" placeholder="Add URL" id="siteUrl">
+                    </div>
+                    <button type="submit" class="addBtn">Add Bookmark</button>
+                </form>
+            </div>
+        </div>
+     
+    </div>
+    <script src="./js/main.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/7d678829bc.js" crossorigin="anonymous"></script>
+</body>
+</html>
